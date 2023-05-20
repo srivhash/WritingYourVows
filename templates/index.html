@@ -9,11 +9,19 @@
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
-  <h3>Name my pet</h3>
+  <img src="{{ url_for('static', filename='ring.png') }}" class="icon" />
+  <h3>Writing Your Vows</h3>
   <form action="/" method="post">
-    <input type="text" name="animal" placeholder="Enter an animal" required />
-    <input type="submit" value="Generate names" />
+    <input type="text" name="name1" placeholder="Enter your name" required />
+    <input type="text" name="name2" placeholder="Enter your partner's name" required />
+    <input type="text" name="prof1" placeholder="How did you meet?" required />
+    <!-- make the input box larger -->
+    <input type="text" name="prof2" placeholder="What do you love about them?" required />
+    <!-- <input > -->
+
+    
+    <!-- <input type="text" name="prof2" placeholder="Enter profession of 2nd partner" required /> -->
+    <input type="submit" value="Write Vows" />
   </form>
   {% if result %}
   <div class="result">{{ result }}</div>

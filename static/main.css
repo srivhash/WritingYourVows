@@ -27,7 +27,7 @@ body {
   padding-top: 60px;
 }
 .icon {
-  width: 34px;
+  width: 45px;
 }
 h3 {
   font-size: 32px;
@@ -61,6 +61,10 @@ input[type="submit"] {
   cursor: pointer;
 }
 .result {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
   font-weight: bold;
   margin-top: 40px;
+
 }
